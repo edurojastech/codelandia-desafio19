@@ -12,10 +12,15 @@ export default function HeaderElement() {
 
   return (
     <Stack
-      direction={"row"}
       alignItems={"center"}
       justifyContent={"space-between"}
-      sx={{ border: "2px solid red" }}
+      sx={{ 
+        flexDirection: {
+          sm: "column",
+          lg: "row",
+          md: "row"
+        }
+      }}
       px={24}
       py={2}
       height={"50px"}
