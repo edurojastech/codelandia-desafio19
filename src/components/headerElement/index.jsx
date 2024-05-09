@@ -19,9 +19,13 @@ export default function HeaderElement() {
           sm: "column",
           lg: "row",
           md: "row"
+        },
+        paddingX: {
+          md: 12,
+          lg: 24,
+          xl: 36
         }
       }}
-      px={24}
       py={2}
       height={"50px"}
     >
