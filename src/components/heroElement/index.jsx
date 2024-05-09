@@ -1,5 +1,7 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import HeroImg from "../../assets/images/hero_img.png";
+import ButtonBlue from "../subComponents/button";
+import ImagemCustom from "../subComponents/imageCustom";
 
 export default function HeroElement() {
   return (
@@ -34,37 +36,9 @@ export default function HeroElement() {
         >
           Rachi, <br /> é tudo que você <br /> precisa em um só lugar.
         </Typography>
-        <Button
-          sx={{
-            padding: '16px 36px !important',
-            width: '250px',
-            marginTop: 4,
-            marginBottom: 4,
-            borderRadius: "50px",
-            backgroundColor: "#0F9AFE",
-            textTransform: 'capitalize',
-            fontSize: '20px',
-            color: "#fff",
-            ':hover':{
-              color: "#0F9AFE",
-              backgroundColor: "#fff",
-            }
-          }}
-        >
-          Cadastrar-se
-        </Button>
+        <ButtonBlue description={'Cadastre-se'} />
       </Stack>
-      <Stack
-        sx={{
-          width: {
-            md: "360px",
-            lg: "360px",
-            xl: "550px",
-          },
-        }}
-      >
-        <img src={HeroImg} alt="hero" width={"100%"} />
-      </Stack>
+      <ImagemCustom urlImagem={HeroImg} />
     </Stack>
   );
 }
