@@ -1,3 +1,4 @@
+import FuncionalidadesElement from "./components/funcionalidadesElement"
 import HeaderElement from "./components/headerElement"
 import HeroElement from "./components/heroElement"
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <HeaderElement />
       <HeroElement />
+      <FuncionalidadesElement/>
     </>
   )
 }
